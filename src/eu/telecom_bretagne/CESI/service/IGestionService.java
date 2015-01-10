@@ -14,4 +14,9 @@ public interface IGestionService {
 	public Service lireService(int identifiant);
 
 	public List<Service> listeServices();
+	
+	public Service creerService(String nomService, int responsableId);
+
+	Service creerService(String nomService, int responsableId,
+			int serviceRattache);
 }

@@ -13,9 +13,6 @@ public interface IGestionEmploye {
 	
 	public List<Employe> listeEmployes();
 	public Employe lireEmploye(int identifiant);
-	public void modifierEmploye(int identifiant, String nouveauNom);
-	public void modifierEmploye(int identifiant, String nouveauNom, int departement_id);
-	public Employe creerEmploye(String nouveauNom, int identifiant);
-	public void supprimerEmploye(int identifiant);
+	public Employe creerEmploye(String nom, String prenom, int serviceId);
 
 }
