@@ -1,5 +1,6 @@
 package eu.telecom_bretagne.CESI.service;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.ejb.Remote;
@@ -13,6 +14,6 @@ public interface IGestionEmploye {
 	
 	public List<Employe> listeEmployes();
 	public Employe lireEmploye(int identifiant);
-	public Employe creerEmploye(String nom, String prenom, int serviceId);
+	public Employe creerEmploye(String nom, String prenom, int serviceId, String statut, Date date_debut, Date date_fin);
 
 }
